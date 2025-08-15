@@ -1,0 +1,4 @@
+pandas
+scikit-surprise
+jupyter
+matplotlib

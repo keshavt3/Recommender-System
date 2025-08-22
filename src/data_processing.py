@@ -1,7 +1,9 @@
 import pandas as pd
 import numpy as np
 from cf_model import normalizeRatings
-
+#we need to creat Y, R, Ynorm, Ymean from reviews.csv and animes.csv
+#Y matrix is ratings, R matrix is presence of ratings, Ynorm is normalized ratings, Ymean is mean ratings for each item
+#Y shape is (num_animes, num_users), R shape is (num_animes, num_users)
 def load_anime_data():
     """
     Load anime data from CSV files and preprocess it.

@@ -24,7 +24,7 @@ def save_recommender(model, save_dir, user_matrix, item_matrix,
         "idx_to_anime": idx_to_anime
     }, f"{save_dir}/recommender_data.pkl")
 
-    print(f"✅ Model and data saved in: {save_dir}")
+    print(f"Model and data saved in: {save_dir}")
 
 
 def load_recommender(save_dir):
@@ -47,5 +47,5 @@ def load_recommender(save_dir):
     idx_to_anime = data["idx_to_anime"]
     idx_to_user = data["idx_to_user"]
 
-    print(f"✅ Model and data loaded from: {save_dir}")
+    print(f"Model and data loaded from: {save_dir}")
     return model, user_matrix, item_matrix, anime_to_idx, user_to_idx, idx_to_anime, idx_to_user
